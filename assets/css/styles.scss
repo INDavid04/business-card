@@ -1,0 +1,25 @@
+/**********************************************************/
+/*                                                        */
+/*  Business card                                         */
+/*  datestamp: 7 July 2023                                */
+/*  timestamp: 09:10 - 12:55                              */
+/*                                                        */
+/**********************************************************/
+$bus-primary: #6c584c; $bus-secondary: #a98467; $bus-text: #f0ead2; $bus-background: #adc178; $bus-cta: #0A0717;
+
+body { margin: 0; }
+footer { margin-top: -7rem; font-size: 1.4rem; text-align: center; }
+a { color: $bus-cta; font-weight: bold; }
+a:focus, a:hover { text-decoration: none; }
+
+.BusinessCard { width: 100%; height: 100vh; background: $bus-background; }
+    .Card { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-bottom: 0.5rem solid $bus-secondary; border-radius: 1rem; padding: 1rem; background: $bus-primary; color: $bus-text;
+        @media (min-width: 450px) { display: flex; width: 24rem }
+        @media (min-width: 750px) { width: 31.25rem; }
+    }
+        .ContainerCardImage { margin: 1.5rem 0;
+            @media (min-width: 450px) { margin: 1.940625rem 0 1.940625rem 1.2rem; }
+            @media (min-width: 750px) { margin: 1.940625rem 0 1.940625rem 1.940625rem; }    
+        }
+            .CardImage { display: block; margin: 0 auto; border-radius: 1rem; }
+        .CardDetails { display: block;  margin: 0 auto; max-width: 222px; text-align: center; }
